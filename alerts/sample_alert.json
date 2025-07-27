@@ -1,0 +1,6 @@
+{
+  "instance": "10.0.0.123:9100",
+  "uid": "abc123",
+  "pod": "pod-xyz",
+  "service": "user-service"
+}

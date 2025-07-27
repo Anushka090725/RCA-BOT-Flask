@@ -1,0 +1,7 @@
+Pods killed with "OOMKilled" status are terminated due to memory limits being exceeded.
+Troubleshooting:
+1. Check `container_memory_usage_bytes`.
+2. Inspect workload memory patterns.
+3. Increase memory limits in pod spec if justified.
+
+Use `kubectl describe pod <pod-name>` to inspect termination reason.

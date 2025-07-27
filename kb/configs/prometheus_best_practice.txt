@@ -1,0 +1,6 @@
+Prometheus setup best practices:
+1. Use `resource_requests` and `limits` for all exporters.
+2. Avoid scraping high-frequency metrics < 15s unless required.
+3. Use relabel configs to drop unnecessary series.
+4. Retention should match use-case: e.g., `--storage.tsdb.retention.time=15d`
+

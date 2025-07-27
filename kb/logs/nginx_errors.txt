@@ -1,0 +1,9 @@
+Frequent 502 or 504 errors in NGINX logs may indicate upstream service failures.
+Check logs for:
+- `connect() failed (111: Connection refused)`
+- `upstream timed out`
+
+Root causes could include:
+- Dead pods or services
+- High load causing timeout
+- Misconfigured service endpoints

@@ -1,0 +1,7 @@
+High CPU usage on a pod often indicates resource-intensive workloads. Check for:
+1. Infinite loops or unbounded tasks.
+2. Spikes in incoming traffic.
+3. Lack of CPU limits in pod spec.
+
+Prometheus metric to monitor: `container_cpu_usage_seconds_total`.
+Thresholds above 0.85 (85%) over a minute usually indicate CPU saturation.
