@@ -39,7 +39,7 @@ def run_rca():
 
         # Step 1: Fetch metrics and logs
         metrics = fetch_metrics(alert_info["instance"])
-        print("metrics",metrics)
+        # print("metrics",metrics)
         # print("metrics",metrics)
         logs = fetch_logs(alert_info["instance"])
         # logs = "null"
@@ -96,7 +96,7 @@ def handle_grafana_webhook():
         prompt = build_prompt(metrics, logs, kb_docs, app_metrics, [alert_json])
         gemini_response = query_gemini(prompt, API_KEY)
         rca_output = gemini_response['candidates'][0]['content']['parts'][0]['text']
-
+        print(rca_output)
         # Step 5: Send email
         send_email(
             subject="📡 RCA Report from Grafana Alert",
@@ -110,4 +110,4 @@ def handle_grafana_webhook():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8001)

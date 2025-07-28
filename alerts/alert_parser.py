@@ -70,7 +70,7 @@ def parse_alert(alert_json):
     Extracts relevant fields: instance, UID, pod, service.
     """
     data = json.loads(alert_json)
-    print("Data from the alert is", data)
+    # print("Data from the alert is", data)
     return {
         "instance": data.get("instance"),
         "uid": data.get("uid"),

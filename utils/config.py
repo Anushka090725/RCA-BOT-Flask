@@ -1,7 +1,8 @@
 # Configuration file for the RCA bot
 
 # Gemini API key
-API_KEY = "AIzaSyDXwYL58MqVSdgUKWX8_gXx2IyLjGq_C4k"
+# API_KEY = "AIzaSyDXwYL58MqVSdgUKWX8_gXx2IyLjGq_C4k"
+API_KEY ="AIzaSyDfEX0REV2fNWYXa8bVmS9LeVE6nhk8kZU"
 
 # Path to the knowledge base directory
 KB_PATH = "./kb"
