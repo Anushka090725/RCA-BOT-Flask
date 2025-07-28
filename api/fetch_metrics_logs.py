@@ -58,7 +58,7 @@ def fetch_logs(instance):
     """
     instance= "simple_app"
     try:
-        url = "http://65.1.84.70:9200/my-flask-app-logs-2025.07.27/_search"  # Update index name if dynamic
+        url = "http://elasticsearch:9200/my-flask-app-logs-2025.07.27/_search"  # Update index name if dynamic
         headers = {'Content-Type': 'application/json'}
 
         query = {
@@ -69,7 +69,7 @@ def fetch_logs(instance):
                         {
                             "range": {
                                 "@timestamp": {
-                                    "gte": "now-5m",
+                                    "gte": "now-6h",
                                     "lte": "now"
                                 }
                             }

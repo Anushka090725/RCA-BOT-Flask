@@ -58,6 +58,8 @@ response_time: 5s 🐢
 
 memory_usage: 81%
 
+Grafana Dashboard :http://65.1.84.70:3000/d/pS6ZuGV7z/prometheus-blackbox-exporter?orgId=1 
+
 status: down ❌
 
 📚 Relevant Knowledge Base Reference
